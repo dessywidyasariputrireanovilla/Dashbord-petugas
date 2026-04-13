@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #006067;
+  --color-primary-fixed: #96f1fa;
+  --color-primary-fixed-dim: #7ad5dd;
+  --color-on-primary: #ffffff;
+  --color-secondary: #006972;
+  --color-secondary-container: #9bf0fc;
+  --color-tertiary: #1d5d6f;
+  --color-tertiary-container: #3b7689;
+  --color-on-tertiary-container: #e0f6ff;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-background: #f8fafb;
+  --color-surface: #f8fafb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f5;
+  --color-surface-container: #eceeef;
+  --color-surface-container-high: #e6e8e9;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #3e494a;
+  --color-outline: #6e797a;
+  --color-outline-variant: #bdc9ca;
+
+  --font-headline: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
+}
